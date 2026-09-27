@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suivi Colis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">📦 Suivi Colis</div>
+    <div class="tagline">Service de suivi en ligne</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Suivez votre colis en quelques secondes.</h1>
+      <p>Recherchez votre commande avec votre numéro de commande.</p>
+    </section>
+
+    <section class="search-card">
+      <label for="order-input">Numéro de commande</label>
+      <div class="search-row">
+        <input type="text" id="order-input" placeholder="Ex : CMD004" autocomplete="off">
+        <button id="search-btn">Rechercher</button>
+      </div>
+      <p id="message" class="message"></p>
+    </section>
+
+    <section id="result-card" class="result-card hidden">
+      <div class="result-header">
+        <span class="status-badge" id="result-status">Statut</span>
+      </div>
+      <dl class="result-grid">
+        <dt>Nom du client</dt><dd id="r-client">—</dd>
+        <dt>Téléphone</dt><dd id="r-phone">—</dd>
+        <dt>N° de commande</dt><dd id="r-order" class="mono">—</dd>
+        <dt>Colis</dt><dd id="r-colis">—</dd>
+        <dt>Date</dt><dd id="r-date">—</dd>
+        <dt>Montant du colis</dt><dd id="r-montant">—</dd>
+        <dt>Reste à payer</dt><dd id="r-reste">—</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Suivi Colis — service de suivi en ligne</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
